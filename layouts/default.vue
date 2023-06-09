@@ -4,9 +4,7 @@
     style="background-image: url('/assets/background.png')"
     ref="fullScreenSize"
   >
-    <div
-      :style="`height: ${containerSize.height}px; width: ${containerSize.width}px`"
-    >
+    <div :style="`height: ${height}px; width: ${width}px`">
       <slot />
     </div>
   </div>
@@ -15,10 +13,4 @@
 <script setup lang="ts">
 const fullScreenSize = ref(null);
 const { width, height } = useElementSize(fullScreenSize);
-const containerSize = computed(() => {
-  return {
-    width: width.value,
-    height: height.value - 90,
-  };
-});
 </script>

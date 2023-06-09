@@ -1,153 +1,174 @@
 <template>
   <div class="w-full h-full p-4">
-    <div
-      class="bg-primary rounded-2rem p-4 w-full h-full flex flex-row bg-slate-9 rounded-10"
-    >
+    <div class="w-full h-full px-1/8">
       <div
-        class="display-none md-display-grid bg-slate-8 -m-4 mr-0 rounded-2rem"
+        class="bg-primary rounded-2rem p-4 w-full h-full flex flex-row bg-slate-9 rounded-10"
       >
-        <div class="w-64 flex flex-col" @click="scrollToSection(firstSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="firstLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">Education</h3>
-            <p class="text-center relative z-20">2016-2022</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
-        <div class="w-64 flex flex-col" @click="scrollToSection(secondSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="secondLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">second</h3>
-            <p class="text-center relative z-20">2020-2021</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
-        <div class="w-64 flex flex-col" @click="scrollToSection(thirdSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="thirdLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">third</h3>
-            <p class="text-center relative z-20">2020-2021</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
-        <div class="w-64 flex flex-col" @click="scrollToSection(fourthSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="fourthLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">fourth</h3>
-            <p class="text-center relative z-20">2020-2021</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
-        <div class="w-64 flex flex-col" @click="scrollToSection(fifthSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="fifthLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">fifth</h3>
-            <p class="text-center relative z-20">2020-2021</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
-        <div class="w-64 flex flex-col" @click="scrollToSection(sixthSection)">
-          <div class="flex-grow" />
-          <div
-            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
-            ref="sixthLocation"
-          >
-            <h3 class="text-xl text-center relative z-20">sixth</h3>
-            <p class="text-center relative z-20">2020</p>
-          </div>
-          <div class="flex-grow" />
-        </div>
         <div
-          class="absolute bg-slate-5 w-225px h-53px rounded-2rem transition-transform duration-400 z-10"
-          :style="`top: ${firstBounding.top.value}px; left: ${firstBounding.left.value}px; transform: translateY(${boundingDifference}px)`"
-        />
-      </div>
-      <div class="w-full h-full overflow-x-hidden overflow-y-auto px-4">
-        <div ref="firstSection" class="bg-slate-8 rounded c-slate-1 py-3">
-          <div class="grow">
-            <h2 class="text-xl text-center">Education</h2>
-            <div class="flex flex-row pt-4">
-              <div class="bg-slate-2 mx-2 w-0.75"></div>
-              <div class="flex flex-col grow">
-                <div class="">
-                  <div>
-                    <span class="font-bold">Virginia Tech</span>
-                    <i> - Blacksburg, VA</i>
+          class="display-none md-display-grid bg-slate-8 -m-4 mr-0 rounded-2rem"
+          v-if="useWindowSize().width.value > 1220"
+        >
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(firstSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="firstLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">Education</h3>
+              <p class="text-center relative z-20">2016-2022</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(secondSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="secondLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">second</h3>
+              <p class="text-center relative z-20">2020-2021</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(thirdSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="thirdLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">third</h3>
+              <p class="text-center relative z-20">2020-2021</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(fourthSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="fourthLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">fourth</h3>
+              <p class="text-center relative z-20">2020-2021</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(fifthSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="fifthLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">fifth</h3>
+              <p class="text-center relative z-20">2020-2021</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="w-64 flex flex-col"
+            @click="scrollToSection(sixthSection)"
+          >
+            <div class="flex-grow" />
+            <div
+              class="c-slate-3 rounded-2rem m-4 bg-slate-7"
+              ref="sixthLocation"
+            >
+              <h3 class="text-xl text-center relative z-20">sixth</h3>
+              <p class="text-center relative z-20">2020</p>
+            </div>
+            <div class="flex-grow" />
+          </div>
+          <div
+            class="absolute bg-slate-5 w-225px h-53px rounded-2rem transition-transform duration-400 z-10"
+            :style="`top: ${firstBounding.top.value}px; left: ${firstBounding.left.value}px; transform: translateY(${boundingDifference}px)`"
+          />
+        </div>
+        <div class="w-full h-full overflow-x-hidden overflow-y-auto px-4">
+          <div ref="firstSection" class="bg-slate-8 rounded c-slate-1 py-3">
+            <div class="grow">
+              <h2 class="text-xl text-center">Education</h2>
+              <div class="flex flex-row pt-4">
+                <div class="bg-slate-2 mx-2 w-0.75"></div>
+                <div class="flex flex-col grow">
+                  <div class="">
+                    <div>
+                      <span class="font-bold">Virginia Tech</span>
+                      <i> - Blacksburg, VA</i>
+                    </div>
+                    <div class="flex flex-row pt-2">
+                      <h3>Master of Science in Civil Engineering</h3>
+                      <div class="grow" />
+                      <b class="mr-2"> May 2022 </b>
+                    </div>
+                    <div class="ml-4">
+                      Transportation Infrastructure and Systems Engineering
+                    </div>
+                    <div class="ml-4">
+                      Thesis: "RSU-Based Intrusion Detection and Autonomous
+                      Intersection Response Systems"
+                      <NuxtLink
+                        to="https://vtechworks.lib.vt.edu/handle/10919/109308"
+                        target="_blank"
+                      >
+                        <Icon name="ic:baseline-open-in-new" class="mb-0.75" />
+                      </NuxtLink>
+                    </div>
                   </div>
                   <div class="flex flex-row pt-2">
-                    <h3>Master of Science in Civil Engineering</h3>
+                    <h3>Bachelors of Science in Civil Engineering</h3>
                     <div class="grow" />
-                    <b class="mr-2"> May 2022 </b>
+                    <b class="mr-2"> May 2020 </b>
                   </div>
-                  <div class="ml-4">
-                    Transportation Infrastructure and Systems Engineering
-                  </div>
-                  <div class="ml-4">
-                    Thesis: "RSU-Based Intrusion Detection and Autonomous
-                    Intersection Response Systems"
-                    <NuxtLink
-                      to="https://vtechworks.lib.vt.edu/handle/10919/109308"
-                      target="_blank"
-                    >
-                      <Icon name="ic:baseline-open-in-new" class="mb-0.75" />
-                    </NuxtLink>
-                  </div>
+                  <div class="ml-4">Minor In Computer Science</div>
+                  <p></p>
                 </div>
-                <div class="flex flex-row pt-2">
-                  <h3>Bachelors of Science in Civil Engineering</h3>
-                  <div class="grow" />
-                  <b class="mr-2"> May 2020 </b>
-                </div>
-                <div class="ml-4">Minor In Computer Science</div>
-                <p></p>
               </div>
             </div>
           </div>
-        </div>
-        <div ref="secondSection">
-          <h2 class="c-slate-1">This is the second section</h2>
-          <p class="c-slate-1">
-            {{ exampleText }}
-          </p>
-        </div>
-        <div ref="thirdSection">
-          <h2 class="c-slate-1">This is the third section</h2>
-          <p class="c-slate-1">
-            {{ exampleText }}
-          </p>
-        </div>
-        <div ref="fourthSection">
-          <h2 class="c-slate-1">This is the fourth section</h2>
-          <p class="c-slate-1">
-            {{ exampleText }}
-          </p>
-        </div>
-        <div ref="fifthSection">
-          <h2 class="c-slate-1">This is the fifth section</h2>
-          <p class="c-slate-1">
-            {{ exampleText }}
-          </p>
-        </div>
-        <div ref="sixthSection">
-          <h2 class="c-slate-1">This is the sixth section</h2>
-          <p class="c-slate-1">
-            {{ exampleText }}
-          </p>
+          <div ref="secondSection">
+            <h2 class="c-slate-1">This is the second section</h2>
+            <p class="c-slate-1">
+              {{ exampleText }}
+            </p>
+          </div>
+          <div ref="thirdSection">
+            <h2 class="c-slate-1">This is the third section</h2>
+            <p class="c-slate-1">
+              {{ exampleText }}
+            </p>
+          </div>
+          <div ref="fourthSection">
+            <h2 class="c-slate-1">This is the fourth section</h2>
+            <p class="c-slate-1">
+              {{ exampleText }}
+            </p>
+          </div>
+          <div ref="fifthSection">
+            <h2 class="c-slate-1">This is the fifth section</h2>
+            <p class="c-slate-1">
+              {{ exampleText }}
+            </p>
+          </div>
+          <div ref="sixthSection">
+            <h2 class="c-slate-1">This is the sixth section</h2>
+            <p class="c-slate-1">
+              {{ exampleText }}
+            </p>
+          </div>
         </div>
       </div>
     </div>
