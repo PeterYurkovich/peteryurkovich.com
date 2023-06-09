@@ -1,13 +1,15 @@
 <template>
   <div class="w-full h-full p-4">
-    <div class="bg-primary rounded-2rem p-4 w-full h-full flex flex-row">
+    <div
+      class="bg-primary rounded-2rem p-4 w-full h-full flex flex-row bg-slate-9 rounded-10"
+    >
       <div
-        class="display-none md-display-grid bg-tertiary -m-4 mr-0 rounded-2rem"
+        class="display-none md-display-grid bg-slate-8 -m-4 mr-0 rounded-2rem"
       >
         <div class="w-64 flex flex-col" @click="scrollToSection(firstSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="firstLocation"
           >
             <h3 class="text-xl text-center relative z-20">Education</h3>
@@ -18,7 +20,7 @@
         <div class="w-64 flex flex-col" @click="scrollToSection(secondSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="secondLocation"
           >
             <h3 class="text-xl text-center relative z-20">second</h3>
@@ -29,7 +31,7 @@
         <div class="w-64 flex flex-col" @click="scrollToSection(thirdSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="thirdLocation"
           >
             <h3 class="text-xl text-center relative z-20">third</h3>
@@ -40,7 +42,7 @@
         <div class="w-64 flex flex-col" @click="scrollToSection(fourthSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="fourthLocation"
           >
             <h3 class="text-xl text-center relative z-20">fourth</h3>
@@ -51,7 +53,7 @@
         <div class="w-64 flex flex-col" @click="scrollToSection(fifthSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="fifthLocation"
           >
             <h3 class="text-xl text-center relative z-20">fifth</h3>
@@ -62,7 +64,7 @@
         <div class="w-64 flex flex-col" @click="scrollToSection(sixthSection)">
           <div class="flex-grow" />
           <div
-            class="c-tertiaryContainer rounded-2rem m-4 bg-onTertiaryContainer"
+            class="c-slate-3 rounded-2rem m-4 bg-slate-7"
             ref="sixthLocation"
           >
             <h3 class="text-xl text-center relative z-20">sixth</h3>
@@ -71,19 +73,16 @@
           <div class="flex-grow" />
         </div>
         <div
-          class="absolute bg-primary w-225px h-53px rounded-2rem transition-transform duration-400 z-10"
+          class="absolute bg-slate-5 w-225px h-53px rounded-2rem transition-transform duration-400 z-10"
           :style="`top: ${firstBounding.top.value}px; left: ${firstBounding.left.value}px; transform: translateY(${boundingDifference}px)`"
         />
       </div>
       <div class="w-full h-full overflow-x-hidden overflow-y-auto px-4">
-        <div
-          ref="firstSection"
-          class="bg-primaryContainer rounded c-onPrimaryContainer py-3"
-        >
+        <div ref="firstSection" class="bg-slate-8 rounded c-slate-1 py-3">
           <div class="grow">
             <h2 class="text-xl text-center">Education</h2>
             <div class="flex flex-row pt-4">
-              <div class="bg-onPrimaryContainer mx-2 w-0.75"></div>
+              <div class="bg-slate-2 mx-2 w-0.75"></div>
               <div class="flex flex-col grow">
                 <div class="">
                   <div>
@@ -121,32 +120,32 @@
           </div>
         </div>
         <div ref="secondSection">
-          <h2 class="c-onPrimary">This is the second section</h2>
-          <p class="c-onPrimary">
+          <h2 class="c-slate-1">This is the second section</h2>
+          <p class="c-slate-1">
             {{ exampleText }}
           </p>
         </div>
         <div ref="thirdSection">
-          <h2 class="c-onPrimary">This is the third section</h2>
-          <p class="c-onPrimary">
+          <h2 class="c-slate-1">This is the third section</h2>
+          <p class="c-slate-1">
             {{ exampleText }}
           </p>
         </div>
         <div ref="fourthSection">
-          <h2 class="c-onPrimary">This is the fourth section</h2>
-          <p class="c-onPrimary">
+          <h2 class="c-slate-1">This is the fourth section</h2>
+          <p class="c-slate-1">
             {{ exampleText }}
           </p>
         </div>
         <div ref="fifthSection">
-          <h2 class="c-onPrimary">This is the fifth section</h2>
-          <p class="c-onPrimary">
+          <h2 class="c-slate-1">This is the fifth section</h2>
+          <p class="c-slate-1">
             {{ exampleText }}
           </p>
         </div>
         <div ref="sixthSection">
-          <h2 class="c-onPrimary">This is the sixth section</h2>
-          <p class="c-onPrimary">
+          <h2 class="c-slate-1">This is the sixth section</h2>
+          <p class="c-slate-1">
             {{ exampleText }}
           </p>
         </div>
@@ -229,7 +228,7 @@ const boundingDifference = computed(() => {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(85, 19, 82);
+  background-color: rgb(51, 65, 85);
   border-radius: 1em;
 }
 </style>
