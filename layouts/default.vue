@@ -7,6 +7,11 @@
     <div :style="`height: ${height}px; width: ${width}px`">
       <slot />
     </div>
+    <div class="fixed top-3 right-3">
+      <NuxtLink to="mailto: peteryurkovich1@gmail.com">
+        <Icon name="bxl:gmail" class="w-8 h-8 c-slate-1" />
+      </NuxtLink>
+    </div>
   </div>
 </template>
 

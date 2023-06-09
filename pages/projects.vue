@@ -172,6 +172,18 @@
         </div>
       </div>
     </div>
+    <NuxtLink
+      to="/"
+      class="fixed top-1/8 -right-100px h-3/4 w-200px rounded-10 bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out"
+    >
+      <div class="absolute top-1/2 left-1/4">
+        <Icon
+          name="bx:bxs-chevron-right"
+          size="2rem"
+          class="c-transparent transition duration-1000 ease-in-out group-hover:c-slate-1"
+        />
+      </div>
+    </NuxtLink>
   </div>
 </template>
 
