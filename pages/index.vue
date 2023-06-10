@@ -14,7 +14,7 @@
             <div class="inline-block">
               <NuxtLink
                 to="/projects"
-                class="transition-color duration-200 ease-in-out underline underline-dashed c-orange-3 hover:c-orange-4"
+                class="pyn-transition-300 underline underline-dashed c-orange-3 hover:c-orange-4"
               >
                 projects
               </NuxtLink>
@@ -23,7 +23,7 @@
             <div class="inline-block">
               <NuxtLink
                 to="/resume"
-                class="transition-color duration-200 ease-in-out underline underline-dashed c-orange-3 hover:c-orange-4"
+                class="pyn-transition-300 underline underline-dashed c-orange-3 hover:c-orange-4"
               >
                 resume.
               </NuxtLink>
