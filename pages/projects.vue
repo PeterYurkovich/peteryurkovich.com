@@ -1,5 +1,5 @@
 <template>
-  <div class="w-full h-full p-4">
+  <div class="w-full h-full p-4 view-transition-projects">
     <div class="w-full h-full px-1/8">
       <div
         class="bg-primary rounded-2rem p-4 w-full h-full flex flex-row bg-slate-9 rounded-10"
@@ -174,7 +174,7 @@
     </div>
     <NuxtLink
       to="/"
-      class="fixed top-1/8 -right-100px h-3/4 w-200px rounded-10 bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out"
+      class="fixed top-1/8 -right-100px h-3/4 w-200px rounded-10 bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out view-transition-main"
     >
       <div class="absolute top-1/2 left-1/4">
         <Icon
