@@ -11,20 +11,20 @@
           <div class="mt-6">
             <h2 class="text-5xl ml-1">Education</h2>
             <div class="flex flex-row pt-4">
-              <div class="bg-orange-4 mx-2 w-0.75"></div>
+              <div class="bg-orange-4 mx-2 w-1 shrink-0"></div>
               <div class="flex flex-col grow">
                 <div>
-                  <span class="font-bold text-xl">Virginia Tech</span>
-                  <i class="text-xl"> - Blacksburg, VA</i>
-                  <div class="flex flex-row pt-2 text-lg">
+                  <span class="font-bold text-2xl">Virginia Tech</span>
+                  <i class="text-2xl"> - Blacksburg, VA</i>
+                  <div class="flex flex-row pt-2 text-xl mb-2">
                     <h3>Master of Science in Civil Engineering</h3>
                     <div class="grow" />
                     <b class="mr-2"> May 2022 </b>
                   </div>
-                  <i class="ml-4">
+                  <i class="ml-4 text-lg">
                     Transportation Infrastructure and Systems Engineering
                   </i>
-                  <div class="ml-4">
+                  <div class="ml-4 text-lg">
                     Thesis:
                     <NuxtLink
                       to="https://vtechworks.lib.vt.edu/handle/10919/109308"
@@ -50,24 +50,43 @@
           <div class="mt-6">
             <h2 class="text-5xl ml-1">Work Experience</h2>
             <div class="flex flex-row pt-4">
-              <div class="bg-orange-4 mx-2 w-0.75"></div>
-              <div class="flex flex-col grow">
-                <div>
-                  <span class="font-bold text-xl">Accrisoft</span>
-                  <div class="flex flex-row pt-2 text-lg">
-                    <h3>Full Stack Developer</h3>
-                    <div class="grow" />
-                    <b class="mr-2"> July 2022 - Present </b>
-                  </div>
-                  Developed
-                  <div class="flex flex-row mt-1.5 gap-2">
-                    <IconBadge icon="akar-icons:php-fill">
-                      <span>PHP</span>
-                    </IconBadge>
-                    <IconBadge icon="akar-icons:vue-fill">
-                      <span>Vue</span>
-                    </IconBadge>
-                  </div>
+              <div class="bg-orange-4 mx-2 w-1 shrink-0"></div>
+              <div class="grow">
+                <span class="font-bold text-2xl">Accrisoft</span>
+                <div class="flex flex-row pt-2 text-xl">
+                  <h3>Full Stack Developer</h3>
+                  <div class="grow" />
+                  <b class="mr-2"> July 2022 - Present </b>
+                </div>
+                <ul class="list-outside list-disc ml-6 text-lg mt-2">
+                  <li>
+                    Co-led rewrite of financial system for a total software
+                    solution. Including leading development of recurring
+                    billing, installment payments, deferrals, accounting and
+                    more
+                  </li>
+                  <li>
+                    Introduced and drove usage of best practices including
+                    foreign keys, vue composition api and more
+                  </li>
+                  <li>
+                    Helped plan sprints, manage deadlines and allocate tasks to
+                    developers effectively
+                  </li>
+                </ul>
+                <div class="flex flex-row mt-1.5 gap-2">
+                  <IconBadge icon="akar-icons:php-fill">
+                    <span>PHP</span>
+                  </IconBadge>
+                  <IconBadge icon="akar-icons:vue-fill">
+                    <span>Vue</span>
+                  </IconBadge>
+                  <IconBadge icon="tabler:brand-mysql">
+                    <span>MySQL</span>
+                  </IconBadge>
+                  <IconBadge icon="mdi:jira">
+                    <span>Jira</span>
+                  </IconBadge>
                 </div>
               </div>
             </div>
