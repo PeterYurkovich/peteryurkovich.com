@@ -32,14 +32,14 @@
                       target="_blank"
                     >
                       <span
-                        class="transition-color duration-300 ease-in-out underline underline-dashed decoration-orange-3 group-hover:decoration-orange-4 group-hover:c-orange-4 underline-offset-2"
+                        class="pyn-transition-300 underline underline-dashed decoration-orange-3 group-hover:decoration-orange-4 group-hover:c-orange-4 underline-offset-2"
                       >
                         "RSU-Based Intrusion Detection and Autonomous
                         Intersection Response Systems"
                       </span>
                       <Icon
                         name="ic:baseline-open-in-new"
-                        class="mb-0.75 transition-color duration-300 ease-in-out c-orange-3 group-hover:c-orange-4"
+                        class="mb-0.75 pyn-transition-300 ease-in-out c-orange-3 group-hover:c-orange-4"
                       />
                     </NuxtLink>
                   </div>
@@ -59,27 +59,14 @@
                     <div class="grow" />
                     <b class="mr-2"> July 2022 - Present </b>
                   </div>
-                  <i class="ml-4">
-                    Transportation Infrastructure and Systems Engineering
-                  </i>
-                  <div class="ml-4">
-                    Thesis:
-                    <NuxtLink
-                      to="https://vtechworks.lib.vt.edu/handle/10919/109308"
-                      class="group"
-                      target="_blank"
-                    >
-                      <span
-                        class="transition-color duration-300 ease-in-out underline underline-dashed decoration-orange-3 group-hover:decoration-orange-4 group-hover:c-orange-4 underline-offset-2"
-                      >
-                        "RSU-Based Intrusion Detection and Autonomous
-                        Intersection Response Systems"
-                      </span>
-                      <Icon
-                        name="ic:baseline-open-in-new"
-                        class="mb-0.75 transition-color duration-300 ease-in-out c-orange-3 group-hover:c-orange-4"
-                      />
-                    </NuxtLink>
+                  Developed
+                  <div class="flex flex-row mt-1.5 gap-2">
+                    <IconBadge icon="akar-icons:php-fill">
+                      <span>PHP</span>
+                    </IconBadge>
+                    <IconBadge icon="akar-icons:vue-fill">
+                      <span>Vue</span>
+                    </IconBadge>
                   </div>
                 </div>
               </div>
