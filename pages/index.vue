@@ -2,7 +2,7 @@
   <div class="w-full h-full view-transition-main">
     <div class="absolute w-full h-14/16 top-1/16 px-1/8">
       <div
-        class="bg-primary rounded-2rem p-4 w-full h-full rounded-10 grid grid-rows-4 backdrop-blur-3xl"
+        class="rounded-2rem p-4 w-full h-full rounded-10 grid grid-rows-4 backdrop-blur-3xl"
         style="background-color: rgba(15, 23, 42, 0.5)"
       >
         <div />
