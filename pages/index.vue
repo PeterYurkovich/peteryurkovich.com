@@ -7,7 +7,7 @@
       >
         <div />
         <div class="flex flex-col w-2/3 mx-4">
-          <div class="c-slate-1 text-8xl">Hey yall</div>
+          <div class="c-slate-1 text-8xl">howdy yall.</div>
           <div class="c-slate-1 pt-16 text-2xl pl-4">
             I'm Peter Yurkovich a full stack developer based in Asheville, North
             Carolina. Check out some of my
