@@ -14,7 +14,7 @@
             <div class="inline-block">
               <NuxtLink
                 to="/projects"
-                class="transition duration-1000 ease-in-out underline underline-dashed hover:c-slate-4"
+                class="transition-color duration-200 ease-in-out underline underline-dashed c-orange-3 hover:c-orange-4"
               >
                 projects
               </NuxtLink>
@@ -23,7 +23,7 @@
             <div class="inline-block">
               <NuxtLink
                 to="/resume"
-                class="transition duration-1000 ease-in-out underline underline-dashed hover:c-slate-4"
+                class="transition-color duration-200 ease-in-out underline underline-dashed c-orange-3 hover:c-orange-4"
               >
                 resume.
               </NuxtLink>
@@ -32,29 +32,7 @@
         </div>
       </div>
     </div>
-    <NuxtLink
-      to="/projects"
-      class="fixed top-1/8 -left-100px h-3/4 w-200px rounded-10 backdrop-blur-3xl bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out view-transition-projects"
-    >
-      <div class="absolute top-1/2 right-1/6">
-        <Icon
-          name="bx:bxs-chevron-left"
-          size="2rem"
-          class="c-transparent transition duration-1000 ease-in-out group-hover:c-slate-1"
-        />
-      </div>
-    </NuxtLink>
-    <NuxtLink
-      to="/resume"
-      class="fixed top-1/8 -right-100px h-3/4 w-200px rounded-10 backdrop-blur-3xl bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out view-transition-resume"
-    >
-      <div class="absolute top-1/2 left-1/6">
-        <Icon
-          name="bx:bxs-chevron-right"
-          size="2rem"
-          class="c-transparent transition duration-1000 ease-in-out group-hover:c-slate-1"
-        />
-      </div>
-    </NuxtLink>
+    <NavigationLeft to="projects" />
+    <NavigationRight to="resume" />
   </div>
 </template>

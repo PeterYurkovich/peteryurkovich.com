@@ -49,69 +49,15 @@
           </div>
           <div>
             <h2 class="c-slate-1">This is the second section</h2>
-            <p class="c-slate-1">
-              {{ exampleText }}
-            </p>
-          </div>
-          <div>
-            <h2 class="c-slate-1">This is the third section</h2>
-            <p class="c-slate-1">
-              {{ exampleText }}
-            </p>
-          </div>
-          <div>
-            <h2 class="c-slate-1">This is the fourth section</h2>
-            <p class="c-slate-1">
-              {{ exampleText }}
-            </p>
-          </div>
-          <div>
-            <h2 class="c-slate-1">This is the fifth section</h2>
-            <p class="c-slate-1">
-              {{ exampleText }}
-            </p>
-          </div>
-          <div>
-            <h2 class="c-slate-1">This is the sixth section</h2>
-            <p class="c-slate-1">
-              {{ exampleText }}
-            </p>
+            <p class="c-slate-1">pog</p>
           </div>
         </div>
       </div>
     </div>
-    <NuxtLink
-      to="/"
-      class="fixed top-1/8 -right-100px h-3/4 w-200px rounded-10 bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out view-transition-main"
-    >
-      <div class="absolute top-1/2 right-1/4">
-        <Icon
-          name="bx:bxs-chevron-right"
-          size="2rem"
-          class="c-transparent transition duration-1000 ease-in-out group-hover:c-slate-1"
-        />
-      </div>
-    </NuxtLink>
-    <NuxtLink
-      to="/projects"
-      class="fixed top-1/4 -right-300px h-1/2 w-200px rounded-10 bg-slate-9 bg-opacity-50 hover:bg-opacity-70 group transition duration-1000 ease-in-out view-transition-resume"
-    >
-      <div class="absolute top-1/2 right-1/4">
-        <Icon
-          name="bx:bxs-chevron-right"
-          size="2rem"
-          class="c-transparent transition duration-1000 ease-in-out group-hover:c-slate-1"
-        />
-      </div>
-    </NuxtLink>
+    <NavigationRight to="" view="main" />
+    <NavigationFarRight to="resume" />
   </div>
 </template>
-
-<script setup lang="ts">
-const exampleText = ref(
-  "this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. resume this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. resume this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. resume this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen. this is a bunch of text that is automatically generated from a database and is displayed on the screen."
-);
-</script>
 
 <style scoped>
 ::-webkit-scrollbar {
