@@ -31,4 +31,12 @@ const viewTransitionName = computed(() => {
     props.view != "" ? props.view : props.to
   }; contain: layout;`;
 });
+
+onKeyStroke(
+  "ArrowRight",
+  (e) => {
+    navigateTo("/" + props.to);
+  },
+  { eventName: "keyup" }
+);
 </script>
