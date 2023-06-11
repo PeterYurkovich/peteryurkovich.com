@@ -154,7 +154,7 @@
                     peteryurkovich.com
                   </div>
                 </NuxtLink>
-                <nuxt-img
+                <img
                   src="/homepage.png"
                   format="png"
                   width="586"
