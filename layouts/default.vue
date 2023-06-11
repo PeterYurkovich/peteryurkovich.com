@@ -1,7 +1,7 @@
 <template>
   <div
     class="bg-scroll w-full min-h-screen font-sans bg-cover bg-no-repeat bg-center"
-    style="background-image: url('/assets/background.png')"
+    style="background-image: url('/background.png')"
     ref="fullScreenSize"
   >
     <div :style="`height: ${height}px; width: ${width}px`">

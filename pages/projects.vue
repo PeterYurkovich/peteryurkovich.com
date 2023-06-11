@@ -104,7 +104,7 @@
               <div class="grow flex flex-col justify-center pb-4">
                 <div>
                   <NuxtLink
-                    to="/assets/MI-RFGSM.pdf"
+                    to="/MI-RFGSM.pdf"
                     class="group"
                     target="_blank"
                     download=""
