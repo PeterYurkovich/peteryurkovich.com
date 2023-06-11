@@ -156,6 +156,7 @@
                 </NuxtLink>
                 <nuxt-img
                   src="/homepage.png"
+                  format="png"
                   class="rounded-2xl transition w-586px h-325px"
                 />
               </div>
