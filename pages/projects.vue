@@ -146,7 +146,7 @@
               <div class="h-full">
                 <NuxtLink
                   to="https://peteryurkovich.com/"
-                  class="absolute w-325px h-325px hover:bg-slate-9 hover:bg-opacity-50 rounded-2xl group pyn-transition-300"
+                  class="absolute w-325px h-325px -mt-65px hover:bg-slate-9 hover:bg-opacity-50 rounded-2xl group pyn-transition-300 z-100"
                 >
                   <div
                     class="absolute rounded-2xl bottom-0 group-hover:c-orange-4 c-transparent text-2xl group-hover:bg-opacity-70 group-hover:bg-slate-9 w-full text-center pb-16 pt-4 pyn-transition-300"
@@ -154,19 +154,16 @@
                     peteryurkovich.com
                   </div>
                 </NuxtLink>
-                <iframe
-                  src="https://peteryurkovich.com/"
-                  width="325"
-                  height="325"
-                  scrolling="no"
-                  class="rounded-2xl"
+                <nuxt-img
+                  src="/homepage.png"
+                  class="rounded-2xl transition w-586px h-325px"
                 />
               </div>
               <div class="grow flex flex-col justify-center pb-4">
                 <div>
                   <div class="font-bold text-3xl">Personal Site v1</div>
                   <div class="text-lg pt-2">
-                    Although mostly static this website was constructed in nuxt
+                    Although mostly static, this website was constructed in nuxt
                     to continue to grow my familiarity with it. It uses the new
                     view-transition api to provide smooth animations between
                     pages, and can be navigated using the arrow keys. It uses
