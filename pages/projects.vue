@@ -53,45 +53,73 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-row pt-6">
-              <div class="bg-orange-4 mx-2 w-1 shrink-0"></div>
-              <div class="grow">
-                <span class="font-bold text-2xl">Virginia Tech</span>
-                <div class="flex flex-row pt-2 text-xl">
-                  <h3>Graduate Research Assistant</h3>
-                  <div class="grow" />
-                  <b class="mr-2"> Sep 2019 - Dec 2021 </b>
+            <div class="flex flex-row gap-4 pt-6">
+              <div class="h-325px w-325px flex flex-col justify-center pb-4">
+                <iframe
+                  width="325"
+                  height="183"
+                  src="https://www.youtube.com/embed/ABccb6EJfFo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  class="rounded-2xl"
+                ></iframe>
+              </div>
+              <div class="grow flex flex-col justify-center pb-4">
+                <div>
+                  <div class="font-bold text-3xl">Autonomous Intersection</div>
+                  <div class="text-lg pt-2">
+                    This project developed an simulation of a an intersection
+                    routing fully autonomous vehicles through it through
+                    wireless communication. This research was completed in
+                    conjunction with Ford to help quantify the impact the cyber
+                    attacks might incur on traffic flow.
+                  </div>
+                  <div class="flex flex-row mt-1.5 gap-2 pt-2">
+                    <IconBadge icon="mdi:language-cpp"></IconBadge>
+                    <IconBadge icon="mdi:language-python">
+                      <span>Python</span>
+                    </IconBadge>
+                    <Badge>
+                      <span>Tkinter</span>
+                    </Badge>
+                  </div>
                 </div>
-                <ul class="list-outside list-disc ml-6 text-lg mt-2">
-                  <li>
-                    Developed a simulation of a fully autonomous intersection
-                    for self driving cars to model cyber-attacks and their
-                    impact.
-                  </li>
-                  <li>
-                    Designed a sensor model to simulate the impact of
-                    degradation on the performance of a road network simulation.
-                  </li>
-                  <li>
-                    Simulated the impact of connected vehicle market penetration
-                    on vehicle density.
-                  </li>
-                  <li>
-                    Modelled industrial machining and manufacturing processes to
-                    identify and reduce waste.
-                  </li>
-                </ul>
-                <div class="flex flex-row mt-1.5 gap-2">
-                  <IconBadge icon="tabler:brand-nuxt">
-                    <span>Nuxt</span>
-                  </IconBadge>
-                  <IconBadge icon="devicon-plain:jupyter-wordmark">
-                    <span>Jupyter</span>
-                  </IconBadge>
-                  <IconBadge icon="simple-icons:pandas">
-                    <span>Pandas</span>
-                  </IconBadge>
-                  <IconBadge icon="mdi:language-cpp"></IconBadge>
+              </div>
+            </div>
+            <div class="flex flex-row gap-4 pt-6">
+              <div class="h-325px w-325px flex flex-col justify-center pb-4">
+                <iframe
+                  width="325"
+                  height="183"
+                  src="https://youtube.com/embed/qT3Psxm0CbE"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  class="rounded-2xl"
+                ></iframe>
+              </div>
+              <div class="grow flex flex-col justify-center pb-4">
+                <div>
+                  <div class="font-bold text-3xl">Autonomous Intersection</div>
+                  <div class="text-lg pt-2">
+                    This project developed an simulation of a an intersection
+                    routing fully autonomous vehicles through it through
+                    wireless communication. This research was completed in
+                    conjunction with Ford to help quantify the impact the cyber
+                    attacks might incur on traffic flow.
+                  </div>
+                  <div class="flex flex-row mt-1.5 gap-2 pt-2">
+                    <IconBadge icon="mdi:language-cpp"></IconBadge>
+                    <IconBadge icon="mdi:language-python">
+                      <span>Python</span>
+                    </IconBadge>
+                    <Badge>
+                      <span>Tkinter</span>
+                    </Badge>
+                  </div>
                 </div>
               </div>
             </div>
