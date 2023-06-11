@@ -143,25 +143,13 @@
               </div>
             </div>
             <div class="flex flex-row gap-4 pt-6">
-              <div class="h-full">
-                <NuxtLink
-                  to="https://peteryurkovich.com/"
-                  class="absolute w-325px h-325px -mt-65px hover:bg-slate-9 hover:bg-opacity-50 rounded-2xl group pyn-transition-300 z-100"
-                >
-                  <div
-                    class="absolute rounded-2xl bottom-0 group-hover:c-orange-4 c-transparent text-2xl group-hover:bg-opacity-70 group-hover:bg-slate-9 w-full text-center pb-16 pt-4 pyn-transition-300"
-                  >
-                    peteryurkovich.com
-                  </div>
-                </NuxtLink>
-                <img
-                  src="/homepage.png"
-                  format="png"
-                  width="586"
-                  height="325"
-                  class="rounded-2xl transition"
-                />
-              </div>
+              <img
+                src="/homepage.png"
+                format="png"
+                width="325"
+                height="325"
+                class="rounded-2xl transition"
+              />
               <div class="grow flex flex-col justify-center pb-4">
                 <div>
                   <div class="font-bold text-3xl">Personal Site v1</div>
