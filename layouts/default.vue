@@ -12,6 +12,11 @@
         <Icon name="bxl:gmail" class="w-8 h-8 c-slate-1" />
       </NuxtLink>
     </div>
+    <div class="fixed top-3 left-3">
+      <NuxtLink to="/">
+        <Icon name="fa6-solid:pen-nib" class="w-8 h-8 c-slate-1" />
+      </NuxtLink>
+    </div>
   </div>
 </template>
 

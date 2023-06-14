@@ -1,17 +1,20 @@
 <template>
-  <div class="w-full h-full p-4 view-transition-projects">
-    <div class="absolute w-full h-14/16 top-1/16 px-1/8">
+  <div class="w-full h-full md:p-4 view-transition-projects">
+    <div
+      class="absolute w-full top-1/16 h-15/16 md:h-14/16 md:px-1/8"
+      ref="swipableContainer"
+    >
       <div
-        class="rounded-2rem p-4 w-full h-full rounded-10 backdrop-blur-3xl"
+        class="rounded-2rem p-4 w-full h-full rounded-t-10 md:rounded-b-10 backdrop-blur-3xl"
         style="background-color: rgba(15, 23, 42, 0.5)"
       >
         <div
           class="w-full h-full overflow-x-hidden overflow-y-auto px-4 c-slate-1"
         >
           <div class="mt-6">
-            <h2 class="text-5xl ml-1">Projects</h2>
-            <div class="flex flex-row gap-4 pt-6">
-              <div class="h-full">
+            <h2 class="text-5xl ml-1 pb-6 mt-6">Projects</h2>
+            <div class="flex flex-col md:flex-row gap-4">
+              <div class="h-full relative">
                 <NuxtLink
                   to="https://pocket-fives.vercel.app/"
                   class="absolute w-325px h-325px hover:bg-slate-9 hover:bg-opacity-50 rounded-2xl group pyn-transition-300"
@@ -36,8 +39,8 @@
                   <div class="text-lg pt-2">
                     This project came about from my teams frustration with
                     making split decisions on pointing stories. While working on
-                    pocket fives I learned about oauth using github and
-                    websocket communication through liveblocks.
+                    Pocket Fives I learned about OAuth using GitHub and
+                    WebSocket communication through Liveblocks.
                   </div>
                   <div class="flex flex-row mt-1.5 gap-2 pt-2">
                     <IconBadge icon="tabler:brand-nuxt">
@@ -53,7 +56,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-row gap-4 pt-6">
+            <div class="flex flex-col md:flex-row gap-4 pt-6">
               <div class="flex flex-col justify-center pb-4">
                 <iframe
                   width="325"
@@ -71,10 +74,10 @@
                   <div class="font-bold text-3xl">Autonomous Intersection</div>
                   <div class="text-lg pt-2">
                     This project developed an simulation of a an intersection
-                    routing fully autonomous vehicles through it through
-                    wireless communication. This research was completed in
-                    conjunction with Ford to help quantify the impact the cyber
-                    attacks might incur on traffic flow.
+                    routing fully autonomous vehicles through it using wireless
+                    communication. This research was completed in conjunction
+                    with Ford to help quantify the impact the cyber attacks
+                    might incur on autonomous traffic flow.
                   </div>
                   <div class="flex flex-row mt-1.5 gap-2 pt-2">
                     <IconBadge icon="mdi:language-cpp"></IconBadge>
@@ -88,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-row gap-4 pt-6">
+            <div class="flex flex-col md:flex-row gap-4 pt-6">
               <div class="flex flex-col justify-center pb-4">
                 <iframe
                   width="325"
@@ -123,10 +126,10 @@
                   </NuxtLink>
                   <div class="text-lg pt-2">
                     This project developed an modification of typical
-                    adversarial attacks against deep reinforcement learning
-                    agents. It trained several Deep Reinforcement Learning (DRL)
-                    models on MuJoCo environments and then attacked them using
-                    our proposed method.
+                    adversarial attacks against Deep Reinforcement Learning
+                    (DRL) agents. It trained several DRL models in different
+                    MuJoCo environments and then attacked them using our
+                    proposed method.
                   </div>
                   <div class="flex flex-row mt-1.5 gap-2 pt-2">
                     <IconBadge icon="mdi:language-python">
@@ -142,7 +145,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex flex-row gap-4 pt-6">
+            <div class="flex flex-col md:flex-row gap-4 pt-6">
               <img
                 src="/homepage.png"
                 format="png"
@@ -154,12 +157,11 @@
                 <div>
                   <div class="font-bold text-3xl">Personal Site v1</div>
                   <div class="text-lg pt-2">
-                    Although mostly static, this website was constructed in nuxt
+                    Although mostly static, this website was constructed in Nuxt
                     to continue to grow my familiarity with it. It uses the new
                     view-transition api to provide smooth animations between
-                    pages, and can be navigated using the arrow keys. It uses
-                    unocss over tailwind for the greater fine grained control
-                    over rules.
+                    pages. It uses UnoCSS to construct rules for dynamic classes
+                    for the view transitions.
                   </div>
                   <div class="flex flex-row mt-1.5 gap-2 pt-2">
                     <IconBadge icon="tabler:brand-nuxt">
@@ -176,10 +178,27 @@
         </div>
       </div>
     </div>
-    <NavigationRight to="" view="main" />
-    <NavigationFarRight to="resume" />
+    <NavigationRight to="" view="main" class="md:display-block display-none" />
+    <NavigationFarRight to="resume" class="md:display-block display-none" />
+    <NavigationFarRight
+      to=""
+      view="main"
+      class="md:display-none display-block"
+    />
   </div>
 </template>
+
+<script setup lang="ts">
+const swipableContainer = ref<HTMLElement | null>(null);
+
+const { isSwiping, lengthX } = useSwipe(swipableContainer);
+
+watch(isSwiping, (val) => {
+  if (!val && lengthX.value > 100) {
+    navigateTo("/");
+  }
+});
+</script>
 
 <style scoped>
 ::-webkit-scrollbar {
