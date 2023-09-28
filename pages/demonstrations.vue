@@ -38,7 +38,7 @@
 type SumResponse = {
   sum: number;
 };
-const { data, pending, error } = await useAPI<SumResponse>("/sum", {
+const { data, pending, error } = await useAPI<SumResponse>("/main/sum", {
   query: {
     num1: 1,
     num2: 2,
