@@ -35,7 +35,12 @@
 </template>
 
 <script setup lang="ts">
-const { data, pending, error } = await useFetch("/api/sum", {
+import { type } from 'os';
+
+type SumResponse = {
+  data: number;
+};
+const { data, pending, error } = await useAPI<SumResponse>("/sum", {
   query: {
     num1: 1,
     num2: 2,
