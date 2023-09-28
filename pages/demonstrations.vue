@@ -27,7 +27,7 @@
           </div>
           <p v-if="pending" class="mt-6">Loading...</p>
           <p v-else-if="error" class="mt-6">{{ error }}</p>
-          <p v-else class="mt-6">{{ data }}</p>
+          <p v-else class="mt-6">{{ data?.sum }}</p>
         </div>
       </div>
     </div>
@@ -35,10 +35,8 @@
 </template>
 
 <script setup lang="ts">
-import { type } from 'os';
-
 type SumResponse = {
-  data: number;
+  sum: number;
 };
 const { data, pending, error } = await useAPI<SumResponse>("/sum", {
   query: {
