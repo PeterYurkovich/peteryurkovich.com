@@ -27,23 +27,9 @@
                             they do best, without worrying about the rest.
                         </p>
                     </div>
-                    <p v-if="pending" class="mt-6">Loading...</p>
-                    <p v-else-if="error" class="mt-6">{{ error }}</p>
-                    <p v-else class="mt-6">{{ data?.sum }}</p>
+                    <Terminal />
                 </div>
             </div>
         </div>
     </div>
 </template>
-
-<script setup lang="ts">
-type SumResponse = {
-    sum: number;
-};
-const { data, pending, error } = await useAPI<SumResponse>("/main", {
-    query: {
-        num1: 1,
-        num2: 2,
-    },
-});
-</script>
