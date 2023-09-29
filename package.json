@@ -13,7 +13,6 @@
         "@nuxt/image": "1.0.0-rc.2",
         "@types/node": "20.7.0",
         "@unocss/nuxt": "0.56.4",
-        "@unocss/preset-web-fonts": "^0.56.4",
         "@unocss/preset-wind": "0.56.4",
         "@unocss/reset": "^0.52.0",
         "@vueuse/core": "^10.1.2",
