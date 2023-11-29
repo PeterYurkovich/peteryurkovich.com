@@ -2,8 +2,7 @@
     <div class="w-full h-full view-transition-main">
         <div class="absolute w-full top-1/16 h-15/16 md:h-14/16 md:px-1/8">
             <div
-                class="p-4 w-full h-full rounded-t-10 md:rounded-b-10 grid md:grid-rows-4 grid-rows-2 backdrop-blur-3xl"
-                style="background-color: rgba(15, 23, 42, 0.5)"
+                class="p-4 w-full h-full rounded-t-10 md:rounded-b-10 grid md:grid-rows-4 grid-rows-2 bg-dark-8 border-gray border-2"
                 ref="swipableContainer"
             >
                 <div class="display-none md:display-block" />
@@ -37,11 +36,6 @@
         </div>
         <NavigationLeft to="projects" class="display-none md:display-block" />
         <NavigationRight to="resume" class="display-none md:display-block" />
-        <NavigationFarLeft
-            to="projects"
-            class="display-block md:display-none"
-        />
-        <NavigationFarRight to="resume" class="display-block md:display-none" />
     </div>
 </template>
 
