@@ -212,11 +212,6 @@
             class="md:display-block display-none"
         />
         <NavigationFarRight to="resume" class="md:display-block display-none" />
-        <NavigationFarRight
-            to=""
-            view="main"
-            class="md:display-none display-block"
-        />
     </div>
 </template>
 

@@ -181,11 +181,6 @@
             to="projects"
             class="display-none md:display-block"
         />
-        <NavigationFarLeft
-            to=""
-            view="main"
-            class="display-block md:display-none"
-        />
     </div>
 </template>
 

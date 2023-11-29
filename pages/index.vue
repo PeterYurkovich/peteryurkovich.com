@@ -37,11 +37,6 @@
         </div>
         <NavigationLeft to="projects" class="display-none md:display-block" />
         <NavigationRight to="resume" class="display-none md:display-block" />
-        <NavigationFarLeft
-            to="projects"
-            class="display-block md:display-none"
-        />
-        <NavigationFarRight to="resume" class="display-block md:display-none" />
     </div>
 </template>
 
