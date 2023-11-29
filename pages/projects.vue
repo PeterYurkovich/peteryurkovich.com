@@ -117,40 +117,38 @@
                             </div>
                         </div>
                         <div class="flex flex-col md:flex-row gap-4 pt-6">
-                            <div class="h-200px relative">
-                                <NuxtLink
-                                    to="https://personalsite-38ry0oyx9-peteryurkovich.vercel.app/"
-                                    class="absolute w-325px h-200px hover:bg-slate-9 hover:bg-opacity-50 rounded-2xl group pyn-transition-300"
-                                >
-                                    <div
-                                        class="absolute rounded-2xl bottom-0 group-hover:c-orange-4 c-transparent text-2xl group-hover:bg-opacity-70 group-hover:bg-slate-9 w-full text-center pb-16 pt-4 pyn-transition-300"
-                                    >
-                                        Personal Site v1
-                                    </div>
-                                </NuxtLink>
-                                <NuxtImg
-                                    src="/homepage.png"
-                                    height="200"
-                                    width="325"
-                                />
-                            </div>
+                            <img
+                                src="/homepage.png"
+                                format="png"
+                                width="325"
+                                height="325"
+                                class="rounded-2xl transition"
+                            />
                             <div class="grow flex flex-col justify-center pb-4">
                                 <div>
-                                    <NuxtLink
-                                        to="https://github.com/PeterYurkovich/peteryurkovich.com/tree/v1"
-                                        class="group font-bold text-3xl"
-                                        target="_blank"
-                                    >
-                                        <span
-                                            class="pyn-transition-300 underline underline-dashed decoration-orange-3 group-hover:decoration-orange-4 group-hover:c-orange-4 underline-offset-2"
+                                    <div class="font-bold text-3xl">
+                                        Personal Site v1
+                                        <NuxtLink
+                                            to="https://personalsite-38ry0oyx9-peteryurkovich.vercel.app/"
+                                            class="group font-bold text-3xl"
+                                            target="_blank"
                                         >
-                                            Personal Site v1
-                                        </span>
-                                        <Icon
-                                            name="tabler:brand-github"
-                                            class="mb-0.5 mr-1 text-2xl pyn-transition-300 ease-in-out c-orange-3 group-hover:c-orange-4"
-                                        />
-                                    </NuxtLink>
+                                            <Icon
+                                                name="ic:baseline-open-in-new"
+                                                class="mr-1 text-2xl pyn-transition-300 ease-in-out c-orange-3 group-hover:c-orange-4"
+                                            />
+                                        </NuxtLink>
+                                        <NuxtLink
+                                            to="https://github.com/PeterYurkovich/peteryurkovich.com/tree/v1"
+                                            class="group font-bold text-3xl"
+                                            target="_blank"
+                                        >
+                                            <Icon
+                                                name="tabler:brand-github"
+                                                class="pb-0.4 mr-1 text-2xl pyn-transition-300 ease-in-out c-orange-3 group-hover:c-orange-4"
+                                            />
+                                        </NuxtLink>
+                                    </div>
                                     <div class="text-lg pt-2">
                                         Although mostly static, this website was
                                         constructed in Nuxt to continue to grow
