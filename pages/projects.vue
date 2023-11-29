@@ -5,8 +5,7 @@
             ref="swipableContainer"
         >
             <div
-                class="rounded-2rem p-4 w-full h-full rounded-t-10 md:rounded-b-10 backdrop-blur-3xl"
-                style="background-color: rgba(15, 23, 42, 0.5)"
+                class="rounded-2rem p-4 w-full h-full rounded-t-10 md:rounded-b-10 bg-dark-8 border-gray border-2"
             >
                 <div
                     class="w-full h-full overflow-x-hidden overflow-y-auto px-4 c-slate-1"
