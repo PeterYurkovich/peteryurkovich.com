@@ -3,7 +3,7 @@
         class="bg-scroll w-full min-h-screen font-sans bg-cover bg-no-repeat bg-center bg-dark-9"
         ref="fullScreenSize"
     >
-        <div :style="`height: ${height}px; width: ${width}px`">
+        <div class="fixed top-0 right-0 w-100% h-100%">
             <slot />
         </div>
         <div class="fixed top-3 right-3">
