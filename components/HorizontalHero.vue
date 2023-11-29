@@ -17,6 +17,7 @@
                 height="325"
                 scrolling="no"
                 class="rounded-2xl"
+                loading="lazy"
             />
         </div>
         <div class="grow flex flex-col justify-center pb-4">

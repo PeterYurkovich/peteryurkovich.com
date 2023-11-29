@@ -24,6 +24,7 @@
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen
                                     class="rounded-2xl"
+                                    loading="lazy"
                                 ></iframe>
                             </div>
                             <div class="grow flex flex-col justify-center pb-4">
@@ -68,6 +69,7 @@
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     allowfullscreen
                                     class="rounded-2xl"
+                                    loading="lazy"
                                 ></iframe>
                             </div>
                             <div class="grow flex flex-col justify-center pb-4">
