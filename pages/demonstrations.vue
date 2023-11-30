@@ -1,14 +1,16 @@
 <template>
-    <div class="w-full h-full md:p-4 view-transition-resume">
-        <div class="absolute w-full top-1/16 h-15/16 md:h-14/16 md:px-1/8">
+    <div class="w-full h-full md:p-4 view-transition-demonstrations">
+        <div
+            class="absolute w-full top-1/16 h-15/16 md:h-14/16 md:px-1/8"
+            ref="swipableContainer"
+        >
             <div
-                class="p-4 w-full h-full rounded-t-10 md:rounded-b-10 backdrop-blur-3xl"
-                style="background-color: rgba(15, 23, 42, 0.5)"
+                class="p-4 w-full h-full rounded-t-10 md:rounded-b-10 border-2 border-gray bg-dark-8"
             >
                 <div
                     class="w-full h-full overflow-x-hidden overflow-y-auto px-4 c-slate-1"
                 >
-                    <div class="text-2xl font-bold">Demonstrations</div>
+                    <h2 class="text-5xl ml-1 pb-6 mt-6">Projects</h2>
                     <div class="mt-6">
                         <div class="text-xl font-bold">PicoServices</div>
                         <p>
@@ -31,5 +33,11 @@
                 </div>
             </div>
         </div>
+        <NavigationLeft to="projects" class="display-none md:display-block" />
+        <NavigationFarLeft
+            to=""
+            view="main"
+            class="display-none md:display-block"
+        />
     </div>
 </template>

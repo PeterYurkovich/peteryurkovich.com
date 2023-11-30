@@ -247,6 +247,10 @@
             class="md:display-block display-none"
         />
         <NavigationFarLeft to="resume" class="md:display-block display-none" />
+        <NavigationRight
+            to="demonstrations"
+            class="md:display-block display-none"
+        />
     </div>
 </template>
 

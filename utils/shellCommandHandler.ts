@@ -5,6 +5,7 @@ export const handleCommand = async (command: string) => {
         case command === "ls":
             return "README.md";
         case command.startsWith("sum"):
+            console.log(command);
             const numbers = command.split(" ").slice(1).map(Number);
             if (numbers.length !== 2) return "Error!";
             const { data } = await useAPI<SumResponse>("/main", {
