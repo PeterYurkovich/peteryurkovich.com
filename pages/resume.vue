@@ -171,12 +171,12 @@
                 </div>
             </div>
         </div>
-        <NavigationLeft
+        <NavigationRight
             to=""
             view="main"
             class="display-none md:display-block"
         />
-        <NavigationFarLeft
+        <NavigationFarRight
             to="projects"
             class="display-none md:display-block"
         />

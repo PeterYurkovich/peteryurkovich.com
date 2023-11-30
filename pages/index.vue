@@ -12,30 +12,30 @@
                     </div>
                     <div class="c-slate-1 pt-16 text-2xl pl-4">
                         I'm Peter Yurkovich a full stack developer based in
-                        Asheville, North Carolina. Check out some of my
-                        <div class="inline-block">
-                            <NuxtLink
-                                to="/projects"
-                                class="pyn-transition-300 underline underline-dashed c-orange-3 hover:c-orange-4"
-                            >
-                                projects
-                            </NuxtLink>
-                        </div>
-                        or my
+                        Asheville, North Carolina. Check out my
                         <div class="inline-block">
                             <NuxtLink
                                 to="/resume"
                                 class="pyn-transition-300 underline underline-dashed c-orange-3 hover:c-orange-4"
                             >
-                                resume.
+                                resume
+                            </NuxtLink>
+                        </div>
+                        or some of my
+                        <div class="inline-block">
+                            <NuxtLink
+                                to="/projects"
+                                class="pyn-transition-300 underline underline-dashed c-orange-3 hover:c-orange-4"
+                            >
+                                projects.
                             </NuxtLink>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <NavigationLeft to="projects" class="display-none md:display-block" />
-        <NavigationRight to="resume" class="display-none md:display-block" />
+        <NavigationLeft to="resume" class="display-none md:display-block" />
+        <NavigationRight to="projects" class="display-none md:display-block" />
     </div>
 </template>
 
