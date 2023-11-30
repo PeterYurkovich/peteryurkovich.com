@@ -1,16 +1,27 @@
+type command = {
+    text: string;
+    commandType: "command" | "response";
+};
+
 export const useShell = () => {
-    const fullHistory = ref<string[]>([]);
+    const fullHistory = ref<command[]>([]);
     const commandHistory = ref<string[]>([]);
     const current = ref<string>("");
 
     const addResponse = (response: string) => {
-        fullHistory.value.push(response);
+        fullHistory.value.push({
+            text: response,
+            commandType: "response",
+        });
         current.value = response;
     };
 
     const addCommand = async (command: string) => {
         commandHistory.value.push(command);
-        fullHistory.value.push(command);
+        fullHistory.value.push({
+            text: command,
+            commandType: "command",
+        });
         addResponse(await handleCommand(command));
     };
 
