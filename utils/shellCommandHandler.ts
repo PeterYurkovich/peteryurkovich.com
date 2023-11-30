@@ -10,7 +10,7 @@ export const handleCommand = async (command: string) => {
                 return "Sorry, but there aren't any query parameters! :(";
             }
             if (query[0] !== "curl https://peteryurkovich.com/api/main") {
-                return "Nice try, but this is a demo! :) Please send the request to https://peteryurkovich.com/api/main";
+                return "Nice try, but this is a demo! :) Try reading the readme";
             }
             if (query.length > 2) {
                 return "Sorry, but there are too many question marks in the url! :(";
@@ -35,7 +35,7 @@ export const handleCommand = async (command: string) => {
         case command.startsWith("cat"):
             const file = command.split(" ")[1];
             if (file === "README.md") {
-                return "cat says meow. :3 Try sending a curl request to https://peteryurkovich.com/api/main with num1 and num2 as query parameters!";
+                return "cat says meow. :3 Send a curl to https://peteryurkovich.com/api/main query params num1/2!";
             }
             return "Invalid file!";
         default:
