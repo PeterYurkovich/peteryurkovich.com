@@ -1,0 +1,14 @@
+---
+const { pageTitle } = Astro.props;
+---
+
+<a
+    href="/"
+    style={`background: ${pageTitle === "Peter - Howdy" ? "green" : ""}`}
+    >Home</a
+>
+<a
+    href="/about/"
+    style={`background: ${pageTitle === "Peter - About" ? "green" : ""}`}
+    >About</a
+>
