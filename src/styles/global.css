@@ -1,0 +1,30 @@
+@property --color-one {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #2c3639;
+}
+@property --color-two {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #3f4e4f;
+}
+@property --color-three {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #a27b5c;
+}
+@property --color-four {
+    syntax: "<color>";
+    inherits: false;
+    initial-value: #dcd7c9;
+}
+
+html {
+    background-color: var(--color-one);
+    color: var(--color-four);
+}
+
+.link {
+    color: var(--color-three);
+    text-decoration: none;
+}

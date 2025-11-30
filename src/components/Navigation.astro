@@ -4,11 +4,11 @@ const { pageTitle } = Astro.props;
 
 <a
     href="/"
-    style={`background: ${pageTitle === "Peter - Howdy" ? "green" : ""}`}
-    >Home</a
+    style={`${pageTitle === "Peter - Howdy" ? "text-decoration: underline" : ""}`}
+    class="link">Home</a
 >
 <a
     href="/about/"
-    style={`background: ${pageTitle === "Peter - About" ? "green" : ""}`}
-    >About</a
+    style={`${pageTitle === "Peter - About" ? "text-decoration: underline" : ""}`}
+    class="link">About</a
 >
