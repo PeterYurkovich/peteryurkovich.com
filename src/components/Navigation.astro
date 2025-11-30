@@ -2,18 +2,33 @@
 const { pageTitle } = Astro.props;
 ---
 
-<a
-    href="/"
-    style={`${pageTitle === "Peter - Howdy" ? "text-decoration: underline" : ""}`}
-    class="link">Home</a
->
-<a
-    href="/projects/"
-    style={`${pageTitle === "Peter - Projects" ? "text-decoration: underline" : ""}`}
-    class="link">Projects</a
->
-<a
-    href="/resume/"
-    style={`${pageTitle === "Peter - Resume" ? "text-decoration: underline" : ""}`}
-    class="link">Resume</a
->
+<style>
+    nav {
+        position: absolute;
+        display: flex;
+        flex-direction: row;
+    }
+    a {
+        border: solid var(--color-two);
+        border-width: 0px 0px 3px 0px;
+        margin: 0px;
+        padding: 4px;
+    }
+</style>
+<nav>
+    <a
+        href="/"
+        style={`${pageTitle === "Peter - Howdy" ? "border-color: var(--color-three); view-transition-name: selected-page" : ""}`}
+        class="link">Home</a
+    >
+    <a
+        href="/projects/"
+        style={`${pageTitle === "Peter - Projects" ? "border-color: var(--color-three); view-transition-name: selected-page" : ""}`}
+        class="link">Projects</a
+    >
+    <a
+        href="/resume/"
+        style={`${pageTitle === "Peter - Resume" ? "border-color: var(--color-three); view-transition-name: selected-page" : ""}`}
+        class="link">Resume</a
+    >
+</nav>
